@@ -1,0 +1,18 @@
+Git Clone
+
+git clone is how you get a local copy of an existing repository to work on. It's usually only used once for a given repository, unless you want to have multiple working copies of it around. .
+
+git pull
+
+Update the local repo with new commits from the remote repo
+
+Git fetch
+
+Fetch is similar to pull, except it won’t do any merging.
+1	%> git checkout localBranch
+2	 %> git fetch origin remoteBranch
+3	%> git branch
+4	master
+5	* localBranch
+6	remoteBranch
+
