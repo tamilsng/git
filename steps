@@ -1,0 +1,86 @@
+   1  yum install git
+    2  git --version
+    3  mkdir tamil
+    4  cd tamil/
+    5  git init
+    6  ls
+    7  ls -lrt
+    8  git remote add orgin "https://github.com/tamilsng/sample.git"
+    9  git pull origin master
+   10  git remote add origin "https://github.com/tamilsng/sample.git"
+   11  git pull origin master
+   12  ls
+   13  git status
+   14  vi file
+   15  git status
+   16  clear
+   17  git add file
+   18  git status
+   19  git commit -m "commit 1"
+   20  git status
+   21  vi file2
+   22  vi file3
+   23  git status
+   24  vi file
+   25  git status
+   26  git add -A
+   27  git status
+   28  git commit -m "adding files"
+   29  git commit -a -m "adding files"
+   30  git log
+   31   history
+   32  git branch firstbranch
+   33  gir branch
+   34  git branch
+   35  git checkout firstbranch
+   36  git branch
+   37  ls
+   38  vi file4
+   39  git status
+   40  git add file4
+   41  git status
+   42  git commit -m "making changes in firstbranch"
+   43   git checkout master
+   44  ls
+   45  git checkout firstbranch
+   46  ls
+   47  history
+   48  ssh-keygen
+   49  cat /root/.ssh/id_rsa.pub.
+   50  cat /root/.ssh/id_rsa.pub
+   51  ssh -T git@github.com
+   52  git branch
+   53  cd tamil/
+   54  git branch
+   55  git checkout firstbranch
+   56  git push origin firstbranch
+   57  git branch subbranch
+   58  git branch
+   59  git checkout subbranch
+   60  vi file10
+   61  git push subbranch
+   62  git status
+   63  git add -A
+   64  git commit -m "3rd branch"
+   65  git push subbranch
+   66  git push origin subbranch
+   67  git checkout master
+   68  git push origin master
+   69  vi revert
+   70  git add -A
+   71  git commit -m "revert commit"
+   72  git status
+   73  vi revert
+   74  git commit -a -m "revert 2"
+   75  git status
+   76  vi revert
+   77  git commit -a -m "revert 2"
+   78  git log
+   79  cat revert
+   80  git commit d1479796 revert
+   81  git branch
+   82  git checkout d1479796 revert
+   83  cat revert
+   84  git checkout 00eba2d7 revert
+   85  cat revert
+   86  history
