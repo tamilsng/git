@@ -1,0 +1,33 @@
+GIT Installation on RHEL 7
+
+https://www.tecmint.com/install-git-centos-fedora-redhat/
+
+Configure
+make 
+make install
+
+need some dependences
+
+    1 yum install git -y
+    3  git --version
+    4  yum groupinstall "Development Tools" -y
+    6  yum install gettext-devel openssl-devel perl-CPAN perl-devel zlib-devel
+    8  yum install wget -y
+    9  wget https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.15.1.tar.gz
+   10  ls -lrt
+   11  tar -xvzf git-2.15.1.tar.gz
+   12  rm -rf git-2.15.1.tar.gz
+   13  ls -lrt
+   14  cd git-2.15.1/
+   15  ll
+   16  ./configure --prefix=/usr/local/git
+   17  make
+   18  make install
+   19  git --version
+   20  pwd
+   21  cd /usr/local/git/bin
+    24  git --version
+   25  echo "export PATH=/usr/local/git/bin:$PATH" >> /etc/profile
+   26  git --version
+   27  source /etc/profile
+   28  git --version
