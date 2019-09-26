@@ -1,0 +1,49 @@
+Git
+
+Create content on the server and clone the repo to local
+Cloning -> make the copy of the repo and linking the origin
+----------------------------------------------------------------------------------------------
+Password less authentication to git hub
+Local machine
+ssh-keygen > generate pub (id_rsa.pub) and private keys (id_rsa) in /root/.ssh/ folder
+                    -  copy public key in github > SSH keys
+                 - test by ssh git@github.com in local machine
+----------------------------------------------------------------------------------------------
+-	Create a repo (sample) in git hub
+-	git clone git@github.com:tamilsng/sample.git ( local machine to clone the repo)
+-	cd sample
+-	add a new file (git add . /commit )
+-	git remote –v (to check the 
+-	git push origin master (to push the newly created file into the github)
+---------------------------------------------------------------------------------------------
+git init – used to initialize a repo (in local folder ) 
+          - it will track all the changes in the repo after the command and default master branch created
+git add .   -  adding many number of files into git repo
+git commit –m “message” – commit the changes
+git  status – to get all the status of the file
+git log – all the commit history / latest on the top
+git add remote origin server_repo_url  - to link local repo to the server ( push for the first time)
+git push –u origin master – push contents from local repo to the server
+git clone server_repo_url  - pull existing repo on the server to local (fresh copy)
+------------------------------------------------------------------------------------------------------------------------
+
+Git Branching ( master -> create branch and finish up task and merge -> delete )
+-git branches are light weight , it does not create any folders like other SCM tools
+-cd repo2 
+-git init 
+-echo infy > name   //  echo chennai > location
+-git status /add . /commit
+-git branch blr_branch
+-git checkout blr_branch // echo bangalore > location2
+- echo bangalore > location2
+- git checkout master
+- git remote add origin git@github.com:tamilsng/repo2.git
+- git push origin master
+- git push origin blr_branch
+- git log --pretty=oneline  (oneline log)
+- git merge blr_branch  (merging with master repo)
+- git push origin master
+- git branch -D blr_branch ( deleting branch locally)
+- git push origin --delete blr_branch ( we can delete this before deleting locally)
+- git branch -v
+
