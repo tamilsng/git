@@ -29,7 +29,11 @@ git checkout – used to go back to the previous commit or early stages to commi
 ----------------------------------------------------------------------------------------------
 
 Git Branching
--	Timeline of the application / Repo 
+-	Timeline of the application / Repo
+git branch - to check which branch and list of branches
+git branch branch-name - create new branch
+git checkout branch-name - Move to the otherbranch
+git merge branch-name - merge the branch ( do it on master branch if you want merge the branch 1)
 ----------------------------------------------------------------------------------------------
 Create content on the server and clone the repo to local
 Cloning -> make the copy of the repo and linking the origin
