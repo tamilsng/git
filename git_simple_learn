@@ -1,5 +1,36 @@
 Git
+https://www.youtube.com/watch?v=USjZcfj8yxE
+https://www.notion.so/Introduction-to-Git-ac396a0697704709a12b6a0e545db049
 
+
+Git vs Git hub
+ Git hub is separate tool that completely relies on git.
+Repositories
+  Git repo is container for the project that is traced by git.
+-	Local repo – stored in your local machine , work locally
+-	Remote repo – Remote system – Share your project – view others code –integrate local version – push local version
+----------------------------------------------------------------------------------------------
+Configure name and email
+-	git config --global user.name “Tamil”
+-	git config --global user.email “tamilsng@live.com”
+This is not used to login, used to identify who made the changes in project.
+----------------------------------------------------------------------------------------------
+git init – used to initialize a repo (in local folder ) 
+     - It will track all the changes in the repo after the command and default master branch created
+You can see a hidden folder .git after this stores all the info of the repo (ls –a)
+git  status – to get all the status of the file
+git commit – 2 steps to commit a file 
+        Need to add staging area ( git add / git add .(add all the changes to staging area)  - > Commit
+   git commit –m “message”
+There are number of changes need to choose which file /changes you want to commit.
+git log – gives history of the commits ( history /Date /message)
+git checkout – used to go back to the previous commit or early stages to commit
+  Syntax – git checkout xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+----------------------------------------------------------------------------------------------
+
+Git Branching
+-	Timeline of the application / Repo 
+----------------------------------------------------------------------------------------------
 Create content on the server and clone the repo to local
 Cloning -> make the copy of the repo and linking the origin
 ----------------------------------------------------------------------------------------------
